@@ -1,0 +1,267 @@
+.root
+{
+    -fx-background-color: #dbf2ff;
+}
+
+.scroll-pane
+{
+    -fx-fit-to-height: true;
+    -fx-fit-to-width: true;
+}
+
+.stackStyle
+{
+    -fx-background-color: #dbf2ff;
+}
+
+#startTitle
+{
+    -fx-text-fill: #1b9681;
+    -fx-font-family: "Corbel";
+    -fx-font-size: 35;
+}
+
+#menuButtons
+{
+    -fx-background-color: lightblue;
+    -fx-font-size: 18;
+}
+#btnStudents
+{
+    -fx-background-color: lightblue;
+    -fx-font-size: 18;
+}
+#btnInstructors
+{
+    -fx-background-color: lightblue;
+    -fx-font-size: 18;
+}
+#btnReport
+{
+    -fx-background-color: lightblue;
+    -fx-font-size: 18;
+}
+#labelTitle
+{
+    -fx-font-family: Corbel;
+}
+#lbDac
+{
+    -fx-spacing: 2em;
+}
+#gpDetail
+{
+    -fx-font-size: 1em;
+    -fx-vgap: 3em;
+}
+#lbName
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbCategory
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbDuration
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbCertification
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbPdC
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.2em;
+}
+
+#gpDaAdicionales
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1em;
+    -fx-vgap: 3em;
+}
+#lbStartDate
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbEndDate
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbNumAsist
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbInstructor
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbType
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbPdC
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbCost
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+
+
+#dpCourseStart, #dpBirthdate, #dpCourseEnd, #dpRegistrationDate
+{
+    -fx-font-size: 1.2em;
+}
+
+#cbCategory, #cbInstructor, #cbCourse, #cbProvince
+{
+    -fx-font-size: 1.2em;
+}
+
+#spnGender, #spNumberStudent
+{
+    -fx-font-size: 1.2em;
+}
+
+#btnSave
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#btnCancel
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#btnClean
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#exit
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#btnAccept
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#btnBack
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#btnReset
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#lbDni
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbName
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbAddress
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbPhone
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbLocality
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbProvince
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbTRegistration
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbRegistrationDate
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbGender
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbBirthdate
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#checkDocumentation
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#checkCertificate
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbPaidAmount
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbCourse
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#rbOrdinary
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#rbFamily
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#rbRepeater
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}

@@ -1,0 +1,236 @@
+.root
+{
+    -fx-background-color: #dbf2ff;
+}
+#tituloInicio
+{
+    -fx-text-fill: #1b9681;
+    -fx-font-family: "Corbel";
+    -fx-font-size: 35;
+}
+#menuButtons
+{
+    -fx-background-color: lightblue;
+    -fx-font-size: 18;
+}
+#btnAlumnos
+{
+    -fx-background-color: lightblue;
+    -fx-font-size: 18;
+}
+#btnInstructores
+{
+    -fx-background-color: lightblue;
+    -fx-font-size: 18;
+}
+#btnInformes
+{
+    -fx-background-color: lightblue;
+    -fx-font-size: 18;
+}
+#labelTitle
+{
+    -fx-font-family: Corbel;
+}
+#lbDac
+{
+    -fx-spacing: 2em;
+}
+#gpDetail
+{
+    -fx-font-size: 1em;
+    -fx-vgap: 3em;
+}
+#lbNombre
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbCategory
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbDuracion
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbCertificacion
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbPdC
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.2em;
+}
+#gpDaAdicionales
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1em;
+    -fx-vgap: 3em;
+}
+#lbFinicio
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbEndDate
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbNumAsist
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbInstructor
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbTipo
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbPdC
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbImporte
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#btnSave
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#btnCancel
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#btnClean
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#exit
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#buttonAceptar
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#buttonCancelar
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#btnLimpiar
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+    -fx-background-color: lightblue;
+}
+#lbDni
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbName
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#address
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#telefono
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbLocalidad
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbProvincia
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbTdeMatricula
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbFechaMatriculacion
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbGenero
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbBirthdate
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#checkDocumentation
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#checkCertificate
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbImporteAbonado
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#lbCurso
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#rbOrdinary
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#rbFamily
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}
+#rbRepeater
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 1.5em;
+}

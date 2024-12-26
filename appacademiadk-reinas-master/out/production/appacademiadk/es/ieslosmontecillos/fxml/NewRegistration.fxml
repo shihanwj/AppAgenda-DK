@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootRegistrationView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color:  #dbf2ff" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ieslosmontecillos.RegistrationViewController">
+   <children>
+      <VBox layoutX="7.0" prefHeight="800.0" prefWidth="1280.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="1280.0">
+               <children>
+                  <Label alignment="CENTER" text="Nueva Matricula" textAlignment="CENTER" textFill="#1b9681">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" prefHeight="20.0" prefWidth="152.0" text="Datos del alumno">
+               <font>
+                  <Font name="Corbel Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <GridPane hgap="10.0" prefHeight="461.0" prefWidth="1326.0" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.6" minWidth="10.0" prefWidth="189.6" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="222.39999999999998" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.39996337890625" minWidth="10.0" prefWidth="310.39996337890625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="246.0" minWidth="10.0" prefWidth="160.00003662109373" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="lbDni" text="DNI/NIF:">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfDNI" onInputMethodTextChanged="#validateDNI" prefHeight="25.0" prefWidth="127.0" promptText="Inserte el DNI..." GridPane.columnIndex="1">
+                     <tooltip>
+                        <Tooltip text="Indique el DNI" />
+                     </tooltip>
+                  </TextField>
+                  <Label fx:id="lbName" prefHeight="17.0" prefWidth="68.0" text="Nombre:" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfName" editable="false" prefHeight="25.0" prefWidth="173.0" promptText="Inserte el nombre..." GridPane.columnIndex="3">
+                     <tooltip>
+                        <Tooltip text="Indique el nombre" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="address" text="Dirección:" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="telefono" text="Teléfono:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbLocalidad" text="Localidad:" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbProvincia" text="Provincia:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="19.0" prefWidth="128.0" text="Datos de matrícula" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="tfAddress" editable="false" promptText="C/Los Montecillos" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <tooltip>
+                        <Tooltip text="Indique el apellido" />
+                     </tooltip>
+                  </TextField>
+                  <TextField fx:id="tfPhone" editable="false" promptText="Inserte el apellido..." GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <tooltip>
+                        <Tooltip text="Indique el numero de telefono" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfLocality" editable="false" promptText="Coin..." GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <tooltip>
+                        <Tooltip text="Indique el nombre" />
+                     </tooltip>
+                  </TextField>
+                  <ComboBox fx:id="cbProvince" prefHeight="25.0" prefWidth="137.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Label fx:id="lbTdeMatricula" text="Tipo de matrícula" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rbOrdinary" mnemonicParsing="false" text="Ordinaria" GridPane.rowIndex="6">
+                     <tooltip>
+                        <Tooltip text="Indique el tipo de matricula" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tgRegistrationType" />
+                     </toggleGroup>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rbRepeater" mnemonicParsing="false" text="Repetidor" toggleGroup="$tgRegistrationType" GridPane.rowIndex="7">
+                     <tooltip>
+                        <Tooltip text="Indique el tipo de matricula" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rbFamily" mnemonicParsing="false" prefHeight="20.0" prefWidth="182.0" text="Familia Numerosa" toggleGroup="$tgRegistrationType" GridPane.rowIndex="8">
+                     <tooltip>
+                        <Tooltip text="Indique el tipo de matricula" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <DatePicker fx:id="dpRegistrationDate" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <tooltip>
+                        <Tooltip text="Indique la fecha de matriculacion" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </DatePicker>
+                  <Label fx:id="lbCurso" text="Curso:" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <ComboBox fx:id="cbCourse" prefHeight="25.0" prefWidth="138.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <tooltip>
+                        <Tooltip text="Indique el curso" />
+                     </tooltip>
+                  </ComboBox>
+                  <CheckBox fx:id="checkDocumentation" mnemonicParsing="false" onAction="#validateDocumentation" prefHeight="20.0" prefWidth="199.0" text="Documentacion" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <tooltip>
+                        <Tooltip text="Indique la documentacion o certificado" />
+                     </tooltip>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkCertificate" mnemonicParsing="false" prefHeight="20.0" prefWidth="179.0" text="Certificado" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <tooltip>
+                        <Tooltip text="Indique la documentacion o certificado" />
+                     </tooltip>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Label fx:id="lbImporteAbonado" text="Importe abonado:" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="tfAmount" prefHeight="25.0" prefWidth="172.0" promptText="€" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                     <tooltip>
+                        <Tooltip text="Indique el importe" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="lbFechaMatriculacion" prefHeight="20.0" prefWidth="180.0" text="Fecha matriculacion:" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbBirthdate" text="Cumpleaños:" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbGenero" text="Sexo:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="spnGender" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <DatePicker fx:id="dpBirthdate" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER" prefHeight="257.0" prefWidth="1262.0">
+               <children>
+                  <Button fx:id="buttonAceptar" mnemonicParsing="false" onAction="#onActionButtonSave" text="Aceptar">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="buttonCancelar" mnemonicParsing="false" onAction="#onActionButtonCancel" text="Cancelar">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnLimpiar" mnemonicParsing="false" onAction="#onActionButtonClean" text="Limpiar">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

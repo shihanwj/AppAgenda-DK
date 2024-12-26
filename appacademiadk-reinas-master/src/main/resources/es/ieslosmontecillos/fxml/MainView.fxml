@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #dbf2ff"
+            xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ieslosmontecillos.MainViewController">
+   <top>
+      <Label fx:id="startTitle" alignment="CENTER" prefHeight="210.0" prefWidth="1280.0" text="AppAcademia" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane fx:id="rootMainView" prefHeight="633.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+         <HBox fx:id="mainView" alignment="TOP_CENTER" layoutY="-346.0" prefHeight="840.0" prefWidth="1920.0">
+            <padding>
+               <Insets left="25.0" right="25.0" top="50.0" />
+            </padding>
+            <VBox fx:id="mainCourse" alignment="CENTER_LEFT" prefHeight="264.0" prefWidth="168.0">
+               <ImageView fx:id="imgNewCourse" fitHeight="154.0" fitWidth="168.0" onMouseClicked="#initiateCourse">
+                  <Image url="@../../../images/encuestaImg.png" />
+               </ImageView>
+               <MenuButton fx:id="menuButtons" mnemonicParsing="false" text="Curso">
+                  <items>
+                     <MenuItem fx:id="menuNewCourse" mnemonicParsing="false" onAction="#initiateCourse" text="Nuevo" />
+                     <MenuItem fx:id="menuNewRegistration" mnemonicParsing="false" onAction="#initiateRegistration" text="Matricula" />
+                  </items>
+                  <VBox.margin>
+                     <Insets left="50.0" top="10.0" />
+                  </VBox.margin>
+               </MenuButton>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="337.0" prefWidth="147.0">
+               <ImageView fitHeight="141.0" fitWidth="138.0" onMouseClicked="#initiateStudents">
+                  <Image url="@../../../images/alumnoImg.png" />
+               </ImageView>
+               <Button fx:id="btnStudents" mnemonicParsing="false" onAction="#initiateStudents" text="Alumnos">
+                  <VBox.margin>
+                     <Insets left="40.0" top="23.0" />
+                  </VBox.margin>
+               </Button>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="256.0" prefWidth="140.0">
+               <ImageView fitHeight="139.0" fitWidth="140.0">
+                  <Image url="@../../../images/instImg.png"/>
+               </ImageView>
+               <Button fx:id="btnInstructors" alignment="CENTER" mnemonicParsing="false" text="Instructor" disable="true">
+                  <VBox.margin>
+                     <Insets left="30.0" top="23.0"/>
+                  </VBox.margin>
+               </Button>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="337.0" prefWidth="159.0">
+               <children>
+                  <ImageView fitHeight="152.0" fitWidth="173.0">
+                     <image>
+                        <Image url="@../../../images/informeImg.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnReport" alignment="CENTER_RIGHT" contentDisplay="CENTER"
+                          mnemonicParsing="false" style="-fx-alignment: center;" text="Informe" disable="true">
+                     <VBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </HBox>
+      </AnchorPane>
+   </center>
+
+</BorderPane>
